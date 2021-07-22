@@ -1,9 +1,9 @@
 import phonenumbers
-#from location import number
 
 from phonenumbers import geocoder
 
-number = "+916377418515"
+number = "+country-dialing-code&then-your-number"
+# In case you didn't understand, I meant to say that to see output enter your country dialing code with "+" on starting and without any space enter your number. 
 
 ch_num = phonenumbers.parse(number, "CH")
 print(geocoder.description_for_number(ch_num, "en"))
